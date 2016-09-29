@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/topGround">
+
+    <GridLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:padding="3dp"
+            android:text="挑战目标"
+            android:background="@color/background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="3dp"
+            android:text="移动次数"
+            android:background="@color/background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="3dp"
+            android:text="当前总分"
+            android:background="@color/background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="3dp"
+            android:text="最佳总分"
+            android:background="@color/background"/>
+
+        <TextView
+            android:id="@+id/goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="3dp"
+            android:textSize="20dp"
+            android:background="@color/background"/>
+
+        <TextView
+            android:id="@+id/movNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_columnWeight="1"
+            android:textSize="20dp"
+            android:background="@color/background"/>
+
+        <TextView
+            android:id="@+id/curScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="3dp"
+            android:textSize="20dp"
+            android:background="@color/background"/>
+
+        <TextView
+            android:id="@+id/bestScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:padding="3dp"
+            android:textSize="20dp"
+            android:background="@color/background"/>
+
+    </GridLayout>
+    <!--与GameView类绑定-->
+    <com.example.hanta.game2048.GameView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:id="@+id/gameView"><!--使GridView铺满剩余容器-->
+    </com.example.hanta.game2048.GameView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rule"
+        android:background="@color/transparent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重新开始"
+            android:layout_weight="1"
+            android:id="@+id/replay"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出游戏"
+            android:layout_weight="1"
+            android:id="@+id/quit"/>
+    </LinearLayout>
+</LinearLayout>
