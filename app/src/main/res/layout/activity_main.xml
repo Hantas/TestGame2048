@@ -104,12 +104,12 @@
 
     </GridLayout>
     <!--与GameView类绑定-->
-    <com.example.hanta.game2048.GameView
+    <com.example.hanta.testgame2048.GameView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
         android:id="@+id/gameView"><!--使GridView铺满剩余容器-->
-    </com.example.hanta.game2048.GameView>
+    </com.example.hanta.testgame2048.GameView>
 
     <TextView
         android:layout_width="match_parent"

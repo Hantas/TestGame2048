@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TestGame2048</string>
+    <string name="rule">规则: 滑动手指 移动方块 相同数字的两个方块合并后变成更大的数字方块</string>
 </resources>
