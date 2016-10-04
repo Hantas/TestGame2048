@@ -16,7 +16,7 @@ import java.util.List;
  * Created by Hanta on 2016/9/29.
  */
 public class GameView extends GridLayout {
-
+//
     public GameView(Context context) {
         super(context);
         initGameView();
